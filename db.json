@@ -1,0 +1,58 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Sistema de Información bancario",
+            "description": "Creación de un Sistema de Información de un banco usando Oracle y SQL, desarrollado en la Universidad de Granada, en la asignatura Diseño y Desarrollo de Sistemas de Información de tercer curso.",
+            "period": "2024-2025",
+            "center": "Universidad de Granada",
+            "skills": ["Oracle", "SQL", "Python", "C++", "Flask"],
+            "tools": ["Visual Studio Code"],
+            "image":""
+        },
+        {
+            "id": 2,
+            "title": "Página Web de un Cine",
+            "description": "Creación de la página web de un cine, con su cartelera, estrenos y próximas películas, desarrolado en la Universidad de Granada, en la asignatura de Programación Web de tercer curso.",
+            "period": "2022-2023",
+            "center": "Universidad de Granada",
+            "skills": ["HTML5", "CSS", "PHP", "JavaScript", "MySQL"],
+            "tools": ["Visual Studio Code", "XAMPP"],
+            "image":""
+        },
+        {
+            "id": 3,
+            "title": "Civitas - Videojuego",
+            "description": "Creación de un videojuego llamado Civitas, que simula el clásico juego de mesa Monopoly, desarrollado en la Universidad de Granada, en la asignatura Programación Diseñada y Orientada a Objetos de segundo curso. ",
+            "period": "2021-2022",
+            "center": "Universidad de Granada",
+            "skills": ["Java"],
+            "tools": ["Netbeans", "Github"],
+            "image":""
+        },
+        {
+            "id": 4,
+            "title": "Aplicación Educativa para personas con diversidad funcional",
+            "description": "Creación de una aplicación educativa para personas con diversidad funcional, trabajando en un equipo compuesto por 6 personas. Desarrollada en la Universida de Granada, en las asignaturas Dirección y Gestión de Proyectos y Metodologías de Desarrollo Ágil, ambas de cuarto curso y de la rama de Ingeniería del Software.",
+            "period": "2025-2026",
+            "center": "Universidad de Granada",
+            "skills": ["Flutter", "Dart", "Firebase", "Git", "Scrum"],
+            "tools": ["Android Studio", "Github", "Jira"],
+            "image":""
+        }
+    ],
+    "skills": [
+        { "id": 1, "name": "HTML5", "level": 60, "category": "Frontend" },
+        { "id": 2, "name": "CSS", "level": 65, "category": "Frontend" },
+        { "id": 3, "name": "JavaScript", "level": 50, "category": "Frontend" },
+        { "id": 4, "name": "Angular", "level": 55, "category": "Frontend" },
+        { "id": 5, "name": "Java", "level": 70, "category": "Frontend" },
+        { "id": 6, "name": "Python", "level": 50, "category": "Frontend" },
+        { "id": 7, "name": "C++", "level": 70, "category": "Frontend" },
+        { "id": 8, "name": "PHP", "level": 65, "category": "Frontend" },
+        { "id": 9, "name": "Spring", "level": 60, "category": "Frontend" },
+        { "id": 10, "name": "MySQL", "level": 80, "category": "Frontend" },
+        { "id": 11, "name": "Oracle/SQL", "level": 80, "category": "Frontend" }
+    ], 
+    "messages": []
+}
