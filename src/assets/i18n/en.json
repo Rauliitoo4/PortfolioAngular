@@ -12,5 +12,20 @@
       "AND": "and",
       "HOW": "How it was made"
     }
+  },
+  "PAGES": {
+    "HOME": {
+      "GREETING": "Hi, I'm",
+      "ROLE": "Full Stack Developer",
+      "SUBTITLE": "Computer Engineering student at the University of Granada",
+      "CTA_PROJECTS": "View proyects",
+      "CTA_CONTACT": "Contact me",
+      "STATS": {
+        "PROJECTS": "Projects",
+        "YEARS": "Years studying",
+        "SKILLS": "Technologies",
+        "LANGUAGES": "Languages"
+      }
+    }
   }
 }

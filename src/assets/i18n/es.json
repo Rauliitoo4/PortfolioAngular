@@ -12,5 +12,20 @@
       "AND": "y",
       "HOW": "Cómo se hizo"
     }
+  },
+  "PAGES": {
+    "HOME": {
+      "GREETING": "Hola, soy",
+      "ROLE": "Desarrollador Full Stack",
+      "SUBTITLE": "Estudiante de Ingeniería Informática en la Universidad de Granada",
+      "CTA_PROJECTS": "Ver proyectos",
+      "CTA_CONTACT": "Contactar",
+      "STATS": {
+        "PROJECTS": "Proyectos",
+        "YEARS": "Años estudiando",
+        "SKILLS": "Tecnologías",
+        "LANGUAGES": "Idiomas"
+      }
+    }
   }
 }

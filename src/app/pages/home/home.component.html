@@ -1,1 +1,35 @@
-<p>home works!</p>
+<section class="hero" #hero>
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="hero-greeting">{{ 'PAGES.HOME.GREETING' | translate }}</p>
+      <h1 class="hero-name">Raúl Redondo Chicano</h1>
+      <h2 class="hero-role">{{ 'PAGES.HOME.ROLE' | translate }}</h2>
+      <p class="hero-subtitle">{{ 'PAGES.HOME.SUBTITLE' | translate }}</p>
+      <div class="hero-buttons">
+        <a mat-raised-button color="primary" routerLink="/projects">
+          {{ 'PAGES.HOME.CTA_PROJECTS' | translate }}
+        </a>
+        <a mat-stroked-button routerLink="/contact">
+          {{ 'PAGES.HOME.CTA_CONTACT' | translate }}
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-photo">
+      <div class="photo-placeholder">
+        <img src="assets/perfil.jpg" alt="Raúl Redondo Chicano" class="hero-img">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-grid">
+    @for (stat of stats; track stat.label) {
+      <div class="stat-card">
+        <span class="stat-value">{{ stat.value }}+</span>
+        <span class="stat-label">{{ stat.label | translate }}</span>
+      </div>
+    }
+  </div>
+</section>

@@ -12,5 +12,20 @@
       "AND": "und",
       "HOW": "Wie es gemacht wurde"
     }
+  },
+  "PAGES": {
+    "HOME": {
+      "GREETING": "Hallo, ich bin",
+      "ROLE": "Full Stack Entwickler",
+      "SUBTITLE": "Informatikstudent and der Universität Granada",
+      "CTA_PROJECTS": "Projekte ansehen",
+      "CTA_CONTACT": "Kontakt aufnehmen",
+      "STATS": {
+        "PROJECTS": "Projekte",
+        "YEARS": "Studienjahre",
+        "SKILLS": "Technologien",
+        "LANGUAGES": "Sprachen"
+      }
+    }
   }
 }

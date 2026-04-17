@@ -13,6 +13,9 @@ html {
 }
 
 html.dark-theme {
+  background-color: var(--mat-sys-background);
+  color: var(--mat-sys-on-background);
+
   @include mat.theme((
     color: (
       theme-type: dark,
