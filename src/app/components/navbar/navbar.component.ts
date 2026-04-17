@@ -25,11 +25,11 @@ import { ThemeService } from '../../services/theme.service';
 export class NavbarComponent {
 
   navItems = [
-    { label: 'NAV.HOME',     icon: 'home',     route:'/'        },
-    { label: 'NAV.ABOUT',    icon: 'person',   route:'/about'   },
-    { label: 'NAV.PROJECTS', icon: 'computer', route:'/projects'},
-    { label: 'NAV.SKILLS',   icon: 'star',     route:'/skills'  },
-    { label: 'NAV.CONTACT',  icon: 'chat',     route:'/contact' }
+    { label: 'COMPONENTS.NAV.HOME',     icon: 'home',     route:'/'        },
+    { label: 'COMPONENTS.NAV.ABOUT',    icon: 'person',   route:'/about'   },
+    { label: 'COMPONENTS.NAV.PROJECTS', icon: 'computer', route:'/projects'},
+    { label: 'COMPONENTS.NAV.SKILLS',   icon: 'star',     route:'/skills'  },
+    { label: 'COMPONENTS.NAV.CONTACT',  icon: 'chat',     route:'/contact' }
   ];
 
   languages = [

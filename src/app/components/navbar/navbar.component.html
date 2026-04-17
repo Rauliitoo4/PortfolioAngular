@@ -26,7 +26,7 @@
          [routerLinkActiveOptions]="{ exact: item.route === '/' }"
          class="nav-item">
         <span class="material-icons nav-icon">{{ item.icon }}</span>
-        <span class="nav-label">{{ item.label }}</span>
+        <span class="nav-label">{{ item.label | translate }}</span>
       </a>
     }
   </div>

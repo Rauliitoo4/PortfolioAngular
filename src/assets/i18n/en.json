@@ -1,93 +1,16 @@
 {
-    "TITLE": {
-        "TITLE":"Welcome to {{nombre}}'s page"
+  "COMPONENTS": {
+    "NAV": {
+      "HOME": "Home",
+      "ABOUT": "About me",
+      "PROJECTS": "Proyects",
+      "SKILLS": "Skills",
+      "CONTACT": "Contact"
     },
-
     "FOOTER": {
-        "TOOLBAR":"2026 Raúl - This is the footer"
-    },
-
-    "CARD": {
-        "COCHE":"Car",
-        "ORDENADOR":"Computer",
-        "ALHAMBRA":"Alhambra"
-    },
-
-    "NAVBAR": {
-        "HOME": "Home",
-        "ABOUT": "About",
-        "CONTACT": "Contact",
-        "LOGIN": "Login",
-        "LOGOUT": "Logout",
-        "ACCOUNT": "Mi account"
-    },
-
-    "CONTACT": {
-        "TITLE": "Contact Form",
-        "NAME": "Name",
-        "EMAIL": "Email",
-        "MESSAGE": "Message",
-        "SEND": "Send"
-    },
-
-    "ABOUT": {
-        "TITLE": "Users",
-        "USERNAME": "Username",
-        "EMAIL": "Email",
-        "PHONE": "Phone",
-        "FILTER": {
-            "FILTER": "Filter",
-            "FILTERS": "Filters",
-            "FILTER_BY_NAME": "Filter by name",
-            "FILTER_BY_CITY": "Filter by city",
-            "ALL": "All",
-            "RESET": "Reset filters"
-        },
-        "SEE_PRODUCTS": "See products"
-    },
-
-    "DETAILS": {
-        "TITLE": "User details",
-        "USER": "User",
-        "ADDRESS": "Address",
-        "GEO": "Geolocalization",
-        "COMPANY": "Company",
-        "NAME": "Name",
-        "USERNAME": "Username",
-        "EMAIL": "Email",
-        "PHONE": "Phone",
-        "WEBSITE": "Website",
-        "STREET": "Street",
-        "HOUSE": "House",
-        "CITY": "City",
-        "CODE": "Postal Code",
-        "LAT": "Latitude",
-        "LON": "Length",
-        "COMPANY_NAME": "Name",
-        "CATCH_PHRASE": "Catch Phrase",
-        "BS": "BS"
-    },
-
-    "ADMIN": {
-        "TITLE": "Welcome to your personal page"
-    },
-
-    "LOGIN": {
-        "TITLE": "Login",
-        "USERNAME": "Username",
-        "PASSWORD": "Password",
-        "SEND": "Send"
-    },
-
-    "PRODUCTS": {
-        "TITLE": "Products",
-        "SEE_USERS": "See users",
-        "NAME": "Name",
-        "PRICE": "Price",
-        "DISCOUNT": "Discount",
-        "DESCRIPTION": "Description"
+      "MADE_WITH": "Made with",
+      "AND": "and",
+      "HOW": "How it was made"
     }
-
-
-    
+  }
 }

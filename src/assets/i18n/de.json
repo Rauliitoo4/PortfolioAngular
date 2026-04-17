@@ -1,93 +1,16 @@
 {
-    "TITLE": {
-        "TITLE":"Willkommen auf der Seite von {{nombre}}"
+  "COMPONENTS": {
+    "NAV": {
+      "HOME": "Startseite",
+      "ABOUT": "Über mich",
+      "PROJECTS": "Projekte",
+      "SKILLS": "Fähigkeiten",
+      "CONTACT": "Kontakt"
     },
-
     "FOOTER": {
-        "TOOLBAR":"2026 Raúl - Dies ist die Fußzeile"
-    },
-
-    "CARD": {
-        "COCHE":"Auto",
-        "ORDENADOR":"Computer",
-        "ALHAMBRA":"Alhambra"
-    },
-
-    "NAVBAR": {
-        "HOME": "Anfang",
-        "ABOUT": "Über",
-        "CONTACT": "Kontakt",
-        "LOGIN": "Einloggen",
-        "LOGOUT": "Abmelden",
-        "ACCOUNT": "Mein konto"
-    },
-
-    "CONTACT": {
-        "TITLE": "Kontaktformular",
-        "NAME": "Name",
-        "EMAIL": "E-mail",
-        "MESSAGE": "Nachricht",
-        "SEND": "Senden"
-    },
-
-    "ABOUT": {
-        "TITLE": "Benutzer",
-        "USERNAME": "Benutzername",
-        "EMAIL": "E-mail",
-        "PHONE": "Telefon",
-        "FILTER": {
-            "FILTER": "Filtern",
-            "FILTERS": "Filter",
-            "FILTER_BY_NAME": "Nach namen filtern",
-            "FILTER_BY_CITY": "Nach stadt filtern",
-            "ALL": "Alle",
-            "RESET": "Filter zurücksetzen"
-        },
-        "SEE_PRODUCTS": "Produkte anzeigen"
-    },
-
-    "DETAILS": {
-        "TITLE": "Benutzerdetails",
-        "USER": "Benutzer",
-        "ADDRESS": "Adresse",
-        "GEO": "Geolokalisierung",
-        "COMPANY": "Gesellschaft",
-        "NAME": "Name",
-        "USERNAME": "Benutzername",
-        "EMAIL": "E-mail",
-        "PHONE": "Telefon",
-        "WEBSITE": "Webseite",
-        "STREET": "Straße",
-        "HOUSE": "Haus",
-        "CITY": "Stadt",
-        "CODE": "Postleitzahl",
-        "LAT": "Breite",
-        "LON": "Länge",
-        "COMPANY_NAME": "Name",
-        "CATCH_PHRASE": "Redewendung",
-        "BS": "BS"
-    },
-
-    "ADMIN": {
-        "TITLE": "Willkommen auf Ihrer persönlichen Seite"
-    },
-
-    "LOGIN": {
-        "TITLE": "Einloggen",
-        "USERNAME": "Benutzername",
-        "PASSWORD": "Passwort",
-        "SEND": "Senden"
-    },
-
-    "PRODUCTS": {
-        "TITLE": "Produkte",
-        "SEE_USERS": "Benutzer anzeigen",
-        "NAME": "Name",
-        "PRICE": "Preis",
-        "DISCOUNT": "Rabatt",
-        "DESCRIPTION": "Beschreibung"
+      "MADE_WITH": "Gemacht mit",
+      "AND": "und",
+      "HOW": "Wie es gemacht wurde"
     }
-
-
-    
+  }
 }

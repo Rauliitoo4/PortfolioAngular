@@ -13,8 +13,6 @@ html {
 }
 
 html.dark-theme {
-  background-color: #121212;
-  color: #ffffff;
   @include mat.theme((
     color: (
       theme-type: dark,
