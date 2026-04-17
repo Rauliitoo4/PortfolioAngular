@@ -1,0 +1,95 @@
+{
+    "TITLE": {
+        "TITLE":"Bienvenue Sur la page de {{nombre}}"
+    },
+
+    "FOOTER": {
+        "TOOLBAR":"2026 Raúl - Ceci est le pied de page"
+    },
+
+    "CARD": {
+        "COCHE":"Voiture",
+        "ORDENADOR":"Ordinateur",
+        "ALHAMBRA":"Alhambra"
+    },
+
+    "NAVBAR": {
+        "HOME": "Debút",
+        "ABOUT": "À propos",
+        "CONTACT": "Contact",
+        "LOGIN": "Se connecter",
+        "LOGOUT": "Se déconnecter",
+        "ACCOUNT": "Mon compte"
+    },
+
+    "CONTACT": {
+        "TITLE": "Formulaire de contact",
+        "NAME": "Nom",
+        "EMAIL": "E-mail",
+        "MESSAGE": "Message",
+        "SEND": "Envoyer"
+    },
+
+    "ABOUT": {
+        "TITLE": "Utilisateurs",
+        "USERNAME": "Nom d'utilisateur",
+        "EMAIL": "E-mail",
+        "PHONE": "Téléphone",
+        "FILTER": {
+            "FILTER": "Filtre",
+            "FILTERS": "Filtres",
+            "FILTER_BY_NAME": "Filtrer par nom",
+            "FILTER_BY_CITY": "Filtrer par ville",
+            "ALL": "Tous",
+            "RESET": "Réinitialiser les filtres"
+        },
+        "SEE_PRODUCTS": "Voir les produits"
+        
+    },
+
+    "DETAILS": {
+        "TITLE": "Détails de l'utilisateur",
+        "USER": "Utilisateur",
+        "ADDRESS": "Adresse",
+        "GEO": "Géolocalisation",
+        "COMPANY": "Entreprise",
+        "NAME": "Nom",
+        "USERNAME": "Nom d'utilisateur",
+        "EMAIL": "E-mail",
+        "PHONE": "Téléphone",
+        "WEBSITE": "Page web",
+        "STREET": "Rue",
+        "HOUSE": "Maison",
+        "CITY": "Ville",
+        "CODE": "Code postal",
+        "LAT": "Latitude",
+        "LON": "Longueur",
+        "COMPANY_NAME": "Nom",
+        "CATCH_PHRASE": "Phrase faite",
+        "BS": "BS"
+    },
+
+    "ADMIN": {
+        "TITLE": "Bienvenue sur votre page personnelle"
+    },
+
+    "LOGIN": {
+        "TITLE": "Se connecter",
+        "USERNAME": "Nom d'utilisateur",
+        "PASSWORD": "Mot de passe",
+        "SEND": "Envoyer"
+    },
+
+    "PRODUCTS": {
+        "TITLE": "Produits",
+        "SEE_USERS": "Voir les utilisateurs",
+        "NAME": "Nom",
+        "PRICE": "Prix",
+        "DISCOUNT": "Rabais",
+        "DESCRIPTION": "Description"
+    }
+
+
+
+    
+}

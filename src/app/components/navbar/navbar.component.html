@@ -1,0 +1,45 @@
+<nav class="navbar-pill">
+  <div class="lang-section">
+    <button class="lang-trigger" [matMenuTriggerFor]="langMenu">
+      <img [src]="getCurrentLanguage()?.flag" class="flag">
+      <span class="lang-label"> {{ getCurrentLanguage()?.label }}</span>
+      <span class="material-icons chevron">expand_more</span>
+    </button>
+    <mat-menu #langMenu="matMenu" class="lang-menu">
+      @for (lang of languages; track lang.code) {
+        <button mat-menu-item
+          (click)="changeLanguage(lang.code)"
+          [class.active-lang]="lang.code === languageService.currentLanguage">
+          <img [src]="lang.flag" class="flag"/>
+          <span>{{ lang.label }}</span>
+        </button>
+      }
+    </mat-menu>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="nav-items">
+    @for (item of navItems; track item.route) {
+      <a [routerLink]="item.route"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+         class="nav-item">
+        <span class="material-icons nav-icon">{{ item.icon }}</span>
+        <span class="nav-label">{{ item.label }}</span>
+      </a>
+    }
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="theme-section">
+    <span class="material-icons theme-icon sun">wb_sunny</span>
+    <mat-slide-toggle
+      [checked] = "themeService.isDarkMode()"
+      (change) ="toggleTheme()"
+      color="primary">
+    </mat-slide-toggle>
+    <span class="material-icons theme-icon moon">nightlight_round</span>
+  </div>
+</nav>
