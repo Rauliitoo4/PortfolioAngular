@@ -26,6 +26,32 @@
         "SKILLS": "Tecnologías",
         "LANGUAGES": "Idiomas"
       }
+    },
+    "ABOUT": {
+      "TITLE": "Sobre mí",
+      "DESCRIPTION": "Soy estudiante de Ingeniería Informática en la Universidad de Granada, apasionado por el desarrollo software. Me gusta aprender nuevas tecnologías y enfrentarme a nuevos retos.",
+      "EDUCATION": "Formación",
+      "EDUCATION_DEGREE": "Grado en Ingeniería Informática",
+      "EDUCATION_SCHOOL": "Universidad de Granada",
+      "PRESENT": "Actualidad",
+      "LANGUAGES_TITLE": "Idiomas",
+      "HOBBIES_TITLE": "Intereses y hobbies",
+      "LANGUAGES": {
+        "SPANISH": "Español",
+        "ENGLISH": "Inglés",
+        "GERMAN": "Alemán",
+        "FRENCH": "Francés",
+        "NATIVE": "Nativo",
+        "HIGH": "Nivel Alto",
+        "BASIC": "Nivel básico"
+      },
+      "HOBBIES": {
+        "TAEKWONDO": "Taekwondo — Cinturón Negro 1er DAN",
+        "GAMING": "Videojuegos",
+        "CODING": "Programación",
+        "FOOTBALL": "Fútbol",
+        "BASKETBALL": "Baloncesto"
+      }
     }
   }
 }

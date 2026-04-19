@@ -1,1 +1,48 @@
-<p>about works!</p>
+<div class="about-container">
+
+  <section class="about-hero">
+    <div class="about-hero-content">
+      <h1>{{ 'PAGES.ABOUT.TITLE' | translate }}</h1>
+      <p class="about-description">{{ 'PAGES.ABOUT.DESCRIPTION' | translate }}</p>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>{{ 'PAGES.ABOUT.EDUCATION' | translate }}</h2>
+    <div class="education-card">
+      <span class="material-icons education-icon">school</span>
+      <div class="education-info">
+        <h3>{{ 'PAGES.ABOUT.EDUCATION_DEGREE' | translate }}</h3>
+        <p>{{ 'PAGES.ABOUT.SCHOOL' | translate }}</p>
+        <p class="education-period">2021 — {{ 'PAGES.ABOUT.PRESENT' | translate }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>{{ 'PAGES.ABOUT.LANGUAGES_TITLE' | translate }}</h2>
+    <div class="languages-grid">
+      @for (lang of languages; track lang.name) {
+        <div class="language-card">
+          <img [src]="lang.flag" [alt]="lang.name | translate" class="lang-flag">
+          <div class="language-info">
+            <span class="language-name">{{ lang.name | translate }}</span>
+            <span class="language-level">{{ lang.level | translate }}</span>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>{{ 'PAGES.ABOUT.HOBBIES_TITLE' | translate }}</h2>
+    <div class="hobbies-grid">
+      @for (hobby of hobbies; track hobby.label) {
+        <div class="hobby-chip">
+          <span class="material-icons hobby-icon">{{ hobby.icon }}</span>
+          {{ hobby.label | translate}}
+        </div>
+      }
+    </div>
+  </section>
+</div>

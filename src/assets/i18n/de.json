@@ -26,6 +26,32 @@
         "SKILLS": "Technologien",
         "LANGUAGES": "Sprachen"
       }
+    },
+     "ABOUT": {
+      "TITLE": "Über mich",
+      "DESCRIPTION": "Ich bin Informatikstudent an der Universität Granada und begeistert von der Softwareentwicklung. Ich lerne gerne neue Technologien und stelle mich neuen Herausforderungen.",
+      "EDUCATION": "Ausbildung",
+      "EDUCATION_DEGREE": "Bachelor in Informatik",
+      "EDUCATION_SCHOOL": "Universität Granada",
+      "PRESENT": "Heute",
+      "LANGUAGES_TITLE": "Sprachen",
+      "HOBBIES_TITLE": "Interessen & Hobbys",
+      "LANGUAGES": {
+        "SPANISH": "Spanisch",
+        "ENGLISH": "Englisch",
+        "GERMAN": "Deutsch",
+        "FRENCH": "Französisch",
+        "NATIVE": "Muttersprache",
+        "HIGH": "Hohes Niveau",
+        "BASIC": "Grundkenntnisse"
+      },
+      "HOBBIES": {
+        "TAEKWONDO": "Taekwondo — Schwarzgurt 1. DAN",
+        "GAMING": "Videospiele",
+        "CODING": "Programmierung",
+        "FOOTBALL": "Fußball",
+        "BASKETBALL": "Basketball"
+      }
     }
   }
 }
