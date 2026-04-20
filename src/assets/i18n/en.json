@@ -82,6 +82,23 @@
       "FRONTEND": "Frontend",
       "BACKEND": "Backend",
       "DATABASE": "Database"
+    },
+    "CONTACT": {
+      "TITLE": "Contact",
+      "SUBTITLE": "Do you have any questions or proposals? Write to me!",
+      "NAME": "Name",
+      "EMAIL": "Email address",
+      "MESSAGE": "Message",
+      "SEND": "Send",
+      "SENDING": "Sending...",
+      "SUCCESS": "Message sent succesfully!",
+      "ERROR": "An error occurred while sending the message",
+      "NAME_REQUIRED": "Name is required",
+      "NAME_MIN": "Name must be at least 2 characters",
+      "EMAIL_REQUIRED": "Email is required",
+      "EMAIL_INVALID": "Email is not valid",
+      "MESSAGE_REQUIRED": "Message is required",
+      "MESSAGE_MIN": "Message must be at least 10 characters"
     }
   }
 }

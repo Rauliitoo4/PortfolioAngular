@@ -1,1 +1,55 @@
-<p>contact works!</p>
+<div class="contact-container">
+  <section class="contact-hero">
+    <h1>{{ 'PAGES.CONTACT.TITLE' |translate }}</h1>
+    <p>{{ 'PAGES.CONTACT.SUBTITLE' | translate }}</p>
+  </section>
+
+  <div class="contact-card">
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>{{ 'PAGES.CONTACT.NAME' | translate }}</mat-label>
+        <input matInput formControlName="name">
+        <mat-icon matSuffix>person</mat-icon>
+        @if (contactForm.get('name')?.hasError('required') && contactForm.get('name')?.touched) {
+          <mat-error>{{ 'PAGES.CONTACT.NAME_REQUIRED' | translate }}</mat-error>
+        }
+        @if (contactForm.get('name')?.hasError('minlength') && contactForm.get('name')?.touched) {
+          <mat-error>{{ 'PAGES.CONTACT.NAME_MIN' | translate }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>{{ 'PAGES.CONTACT.EMAIL' | translate }}</mat-label>
+        <input matInput formControlName="email" type="email">
+        <mat-icon matSuffix>email</mat-icon>
+        @if (contactForm.get('email')?.hasError('required') && contactForm.get('email')?.touched) {
+          <mat-error>{{ 'PAGES.CONTACT.EMAIL_REQUIRED' | translate}}</mat-error>
+        }
+        @if (contactForm.get('email')?.hasError('email') && contactForm.get('email')?.touched) {
+          <mat-error>{{ 'PAGES.CONTACT.EMAIL_INVALID' | translate }}</mat-error>
+        }
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="full-width">
+        <mat-label>{{ 'PAGES.CONTACT.MESSAGE' | translate }}</mat-label>
+        <textarea matInput formControlName="message" rows="6"></textarea>
+        <mat-icon matSuffix>chat</mat-icon>
+        @if (contactForm.get('message')?.hasError('required') && contactForm.get('message')?.touched) {
+          <mat-error>{{ 'PAGES.CONTACT.MESSAGE_REQUIRED' | translate}}</mat-error>
+        }
+        @if (contactForm.get('message')?.hasError('minlength') && contactForm.get('message')?.touched) {
+          <mat-error>{{ 'PAGES.CONTACT.MESSAGE_MIN' | translate }}</mat-error>
+        }
+      </mat-form-field>
+
+      <button mat-raised-button color="primary"
+        type="submit"
+        [disabled]="contactForm.invalid || sending"
+        class="submit-btn">
+        <mat-icon>send</mat-icon>
+        {{ sending ? ('PAGES.CONTACT.SENDING' | translate) : ('PAGES.CONTACT.SEND' | translate) }}
+      </button>
+
+    </form>
+  </div>
+</div>

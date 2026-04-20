@@ -82,6 +82,23 @@
       "FRONTEND": "Frontend",
       "BACKEND": "Backend",
       "DATABASE": "Base de datos"
+    },
+    "CONTACT": {
+      "TITLE": "Contacto",
+      "SUBTITLE": "¿Tiene alguna pregunta o propuesta? ¡Escríbeme!",
+      "NAME": "Nombre",
+      "EMAIL": "Correo electrónico",
+      "MESSAGE": "Mensaje",
+      "SEND": "Enviar",
+      "SENDING": "Enviando...",
+      "SUCCESS": "¡Mensaje eviado correctamente!",
+      "ERROR": "Ha ocurrido un error al enviar el mensaje",
+      "NAME_REQUIRED": "El nombre es obligatorio",
+      "NAME_MIN": "El nombre debe tener al menos 2 caracteres",
+      "EMAIL_REQUIRED": "El correo es obligatorio",
+      "EMAIL_INVALID": "El correo no es válido",
+      "MESSAGE_REQUIRED": "El mensaje es obligatorio",
+      "MESSAGE_MIN": "El mensaje debe tener al menos 10 caracteres"
     }
   }
 }

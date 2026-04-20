@@ -82,6 +82,23 @@
       "FRONTEND": "Frontend",
       "BACKEND": "Backend",
       "DATABASE": "Datebank"
+    },
+    "CONTACT": {
+      "TITLE": "Kontakt",
+      "SUBTITLE": "Haben Sie Fragen oder Vorschläge? Schreiben Sie mir!",
+      "NAME": "Name",
+      "EMAIL": "E-Mail-Adresse",
+      "MESSAGE": "Nachricht",
+      "SEND": "Senden",
+      "SENDING": "Wird gesendet...",
+      "SUCCESS": "Nachricht erfolgreich gesendet!",
+      "ERROR": "Beim Senden der Nachricht ist ein Fehler aufgetreten",
+      "NAME_REQUIRED": "Name ist erforderlich",
+      "NAME_MIN": "Name muss mindestens 2 Zeichen lang sein",
+      "EMAIL_REQUIRED": "E-Mail ist erforderlich",
+      "EMAIL_INVALID": "E-Mail ist ungültig",
+      "MESSAGE_REQUIRED": "Nachricht ist erforderlich",
+      "MESSAGE_MIN": "Nachricht muss mindestens 10 Zeichen lang sein"
     }
   }
 }
