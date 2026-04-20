@@ -30,12 +30,26 @@
      "ABOUT": {
       "TITLE": "Über mich",
       "DESCRIPTION": "Ich bin Informatikstudent an der Universität Granada und begeistert von der Softwareentwicklung. Ich lerne gerne neue Technologien und stelle mich neuen Herausforderungen.",
-      "EDUCATION": "Ausbildung",
-      "EDUCATION_DEGREE": "Bachelor in Informatik",
-      "EDUCATION_SCHOOL": "Universität Granada",
       "PRESENT": "Heute",
       "LANGUAGES_TITLE": "Sprachen",
       "HOBBIES_TITLE": "Interessen & Hobbys",
+      "EDUCATION": {
+        "TITLE": "Akademische Ausbildung",
+        "DEGREE_UNI": "Bachelor in Informatik",
+        "SCHOOL_UNI": "Universität Granada",
+        "DEGREE_BACH": "Technologisches Abitur",
+        "SCHOOL_BACH": "I.E.S. Vega de Mar, San pedro de Alcántara",
+        "DEGREE_ESO": "Sekundarschulabschluss",
+        "SCHOOL_ESO": "I.E.S. Vega de Mar, San pedro de Alcántara"
+      },
+      "ACHIEVEMENTS": {
+        "TITLE": "Außerschulische Ausbildung",
+        "BLACK_BELT": "Schwarzgurt 1. DAN — Taekwondo",
+        "BLACK_BELT_SUB": "Spanischer Taekwondo-Verband",
+        "CHAMPION": "Spanischer Meister 2016",
+        "CHAMPION_SUB": "Taekwondo — Jungendkategorie",
+        "CHAMPION_BADGE": "Spanischer Mesiter"
+      },
       "LANGUAGES": {
         "SPANISH": "Spanisch",
         "ENGLISH": "Englisch",
@@ -46,7 +60,8 @@
         "BASIC": "Grundkenntnisse"
       },
       "HOBBIES": {
-        "TAEKWONDO": "Taekwondo — Schwarzgurt 1. DAN",
+        "TAEKWONDO": "Taekwondo",
+        "MARTIAL_ARTS": "Kampfsport",
         "GAMING": "Videospiele",
         "CODING": "Programmierung",
         "FOOTBALL": "Fußball",

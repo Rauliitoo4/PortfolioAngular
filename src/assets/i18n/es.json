@@ -30,12 +30,26 @@
     "ABOUT": {
       "TITLE": "Sobre mí",
       "DESCRIPTION": "Soy estudiante de Ingeniería Informática en la Universidad de Granada, apasionado por el desarrollo software. Me gusta aprender nuevas tecnologías y enfrentarme a nuevos retos.",
-      "EDUCATION": "Formación",
-      "EDUCATION_DEGREE": "Grado en Ingeniería Informática",
-      "EDUCATION_SCHOOL": "Universidad de Granada",
       "PRESENT": "Actualidad",
       "LANGUAGES_TITLE": "Idiomas",
       "HOBBIES_TITLE": "Intereses y hobbies",
+      "EDUCATION": {
+        "TITLE": "Formación académica",
+        "DEGREE_UNI": "Grado en Ingeniería Informática",
+        "SCHOOL_UNI": "Universidad de Granada",
+        "DEGREE_BACH": "Bachillerato tecnológico",
+        "SCHOOL_BACH": "I.E.S. Vega de Mar, San pedro de Alcántara",
+        "DEGREE_ESO": "Educación Secundaria Obligatoria (ESO)",
+        "SCHOOL_ESO": "I.E.S. Vega de Mar, San pedro de Alcántara"
+      },
+      "ACHIEVEMENTS": {
+        "TITLE": "Formación no académica",
+        "BLACK_BELT": "Cinturón Negro 1er DAN — Taekwondo",
+        "BLACK_BELT_SUB": "Federación Española de Taekwondo",
+        "CHAMPION": "Campeón de España 2016",
+        "CHAMPION_SUB": "Taekwondo — Categoría Junior",
+        "CHAMPION_BADGE": "Campeón de España"
+      },
       "LANGUAGES": {
         "SPANISH": "Español",
         "ENGLISH": "Inglés",
@@ -46,7 +60,8 @@
         "BASIC": "Nivel básico"
       },
       "HOBBIES": {
-        "TAEKWONDO": "Taekwondo — Cinturón Negro 1er DAN",
+        "TAEKWONDO": "Taekwondo",
+        "MARTIAL_ARTS": "Artes marciales",
         "GAMING": "Videojuegos",
         "CODING": "Programación",
         "FOOTBALL": "Fútbol",

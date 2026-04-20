@@ -73,6 +73,87 @@
   margin-top: 4px !important;
 }
 
+.education-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.achievement-card {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background-color: var(--mat-sys-surface-variant);
+  border-radius: 16px;
+  border: 1 px solid var(--mat-sys-outline-variant);
+  position: relative;
+  overflow: hidden;
+
+  &.gold {
+    background: linear-gradient(135deg, #fff8e1, #fff3cd);
+    border: 2px solid #f9a825;
+
+    .achievement-icon {
+      color: #f9a825;
+    }
+
+    h3 {
+      color: #e65100 ;
+    }
+
+    p {
+      color: #5d4037 !important;
+    }
+  }
+}
+
+.achievement-icon {
+  font-size: 48px;
+  color: var(--mat-sys-primary);
+  flex-shrink: 0;
+}
+
+.achievement-info {
+  flex: 1;
+
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 4px;
+  }
+
+  p {
+    font-size: 15px;
+    color: var(--mat-sys-on-surface-variant);
+    margin: 0;
+  }
+}
+
+.champion-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: linear-gradient(135deg, #f9a825, #ff6f00);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(249, 168, 37, 0.5);
+  flex-shrink: 0;
+
+  material-icons {
+    font-size: 16px;
+  }
+}
+
 .languages-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

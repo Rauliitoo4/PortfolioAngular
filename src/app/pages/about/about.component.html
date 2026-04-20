@@ -8,14 +8,41 @@
   </section>
 
   <section class="about-section">
-    <h2>{{ 'PAGES.ABOUT.EDUCATION' | translate }}</h2>
-    <div class="education-card">
-      <span class="material-icons education-icon">school</span>
-      <div class="education-info">
-        <h3>{{ 'PAGES.ABOUT.EDUCATION_DEGREE' | translate }}</h3>
-        <p>{{ 'PAGES.ABOUT.SCHOOL' | translate }}</p>
-        <p class="education-period">2021 — {{ 'PAGES.ABOUT.PRESENT' | translate }}</p>
-      </div>
+    <h2>{{ 'PAGES.ABOUT.EDUCATION.TITLE' | translate }}</h2>
+    <div class="education-list">
+      @for (edu of education; track edu.degree) {
+        <div class="education-card">
+          <span class="material-icons education-icon">{{ edu.icon }}</span>
+          <div class="education-info">
+            <h3>{{ edu.degree | translate }}</h3>
+            <p>{{ edu.school | translate }}</p>
+            <p class="education-period">
+              {{ edu.period }}{{ edu.present ? ('PAGES.ABOUT.PRESENT' | translate) : '' }}
+            </p>
+          </div>
+        </div>
+      }
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>{{ 'PAGES.ABOUT.ACHIEVEMENTS.TITLE' | translate }}</h2>
+    <div class="achievements-list">
+      @for (achievement of achievements; track achievement.title) {
+        <div class="achievement-card" [class.gold]="achievement.gold">
+          <span class="material-icons achievement-icon">{{ achievement.icon }}</span>
+          <div class="achievement-info">
+            <h3>{{ achievement.title | translate }}</h3>
+            <p>{{ achievement.subtitle | translate }}</p>
+          </div>
+          @if (achievement.gold) {
+            <div class="champion-badge">
+              <span class="material-icons">star</span>
+              {{ 'PAGES.ABOUT.ACHIEVEMENTS.CHAMPION_BADGE' | translate }}
+            </div>
+          }
+        </div>
+      }
     </div>
   </section>
 
