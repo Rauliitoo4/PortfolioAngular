@@ -1,6 +1,10 @@
+export type SkillCategory = 'frontend' | 'backend' | 'database';
+
 export interface Skill {
     id: number;
     name: string;
     level: number;
-    category: string;
+    category: SkillCategory;
+    icon: string;
 }
+

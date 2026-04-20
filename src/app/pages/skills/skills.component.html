@@ -1,1 +1,36 @@
-<p>skills works!</p>
+<div class="skills-container">
+  <section class="skills-hero">
+    <h1>{{ 'PAGES.SKILLS.TITLE' | translate }}</h1>
+    <p>{{ 'PAGES.SKILLS.SUBTITLE' | translate }}</p>
+  </section>
+
+  <div class="filters">
+    @for (filter of filters; track filter.value) {
+      <button class="filter-chip"
+        [class.active]="activeFilter === filter.value"
+        (click) = "setFilter(filter.value)">
+        {{ filter.label | translate }}
+      </button>
+    }
+  </div>
+
+  <div class="skills-grid">
+    @for (skill of filteredSkills; track skill.id) {
+      <div class="skill-card">
+        <div class="skill-header">
+          <div class="skill-name-wrapper">
+            <img [src]="skill.icon" [alt]="skill.name" class="skill-icon">
+            <span class="skill-name">{{ skill.name }}</span>
+          </div>
+          <span class="skill-level-label">{{ skill.level | level }}</span>
+        </div>
+        <mat-progress-bar
+          mode="determinate"
+          [value]="skill.level"
+          color="primary">
+        </mat-progress-bar>
+        <span class="skill-percent">{{ skill.level }}%</span>
+      </div>
+    }
+  </div>
+</div>

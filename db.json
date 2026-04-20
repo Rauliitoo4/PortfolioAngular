@@ -42,17 +42,18 @@
         }
     ],
     "skills": [
-        { "id": 1, "name": "HTML5", "level": 60, "category": "Frontend" },
-        { "id": 2, "name": "CSS", "level": 65, "category": "Frontend" },
-        { "id": 3, "name": "JavaScript", "level": 50, "category": "Frontend" },
-        { "id": 4, "name": "Angular", "level": 55, "category": "Frontend" },
-        { "id": 5, "name": "Java", "level": 70, "category": "Frontend" },
-        { "id": 6, "name": "Python", "level": 50, "category": "Frontend" },
-        { "id": 7, "name": "C++", "level": 70, "category": "Frontend" },
-        { "id": 8, "name": "PHP", "level": 65, "category": "Frontend" },
-        { "id": 9, "name": "Spring", "level": 60, "category": "Frontend" },
-        { "id": 10, "name": "MySQL", "level": 80, "category": "Frontend" },
-        { "id": 11, "name": "Oracle/SQL", "level": 80, "category": "Frontend" }
-    ], 
+        { "id": 1, "name": "HTML5", "level": 60, "category": "frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+        { "id": 2, "name": "CSS", "level": 65, "category": "frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+        { "id": 3, "name": "JavaScript", "level": 50, "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+        { "id": 4, "name": "Angular", "level": 55, "category": "Frontend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
+        { "id": 5, "name": "Java", "level": 70, "category": "backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
+        { "id": 6, "name": "Python", "level": 50, "category": "backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+        { "id": 7, "name": "C++", "level": 70, "category": "backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
+        { "id": 8, "name": "PHP", "level": 65, "category": "backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+        { "id": 9, "name": "Spring", "level": 60, "category": "backend", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+        { "id": 10, "name": "MySQL", "level": 80, "category": "database", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+        { "id": 11, "name": "Oracle/SQL", "level": 80, "category": "database", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/oracle/oracle-original.svg" },
+        { "id": 12, "name": "PostgreSQL", "level": 75, "category": "database", "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" }
+    ],
     "messages": []
 }

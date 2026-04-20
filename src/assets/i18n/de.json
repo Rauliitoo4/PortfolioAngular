@@ -74,6 +74,14 @@
       "TOOLS": "Werkzeuge",
       "SEE_MORE": "Mehr sehen",
       "SEE_LESS": "Weniger sehen"
+    },
+    "SKILLS": {
+      "TITLE": "Fähigkeiten",
+      "SUBTITLE": "Technologien, mit denen ich arbeite",
+      "ALL": "Alle",
+      "FRONTEND": "Frontend",
+      "BACKEND": "Backend",
+      "DATABASE": "Datebank"
     }
   }
 }
