@@ -67,6 +67,13 @@
         "FOOTBALL": "Fußball",
         "BASKETBALL": "Basketball"
       }
+    },
+    "PROJECTS": {
+      "TITLE": "Projekte",
+      "SUBTITLE": "Einige der Projekte, die ich während meiner Ausbildung entwickelt habe",
+      "TOOLS": "Werkzeuge",
+      "SEE_MORE": "Mehr sehen",
+      "SEE_LESS": "Weniger sehen"
     }
   }
 }

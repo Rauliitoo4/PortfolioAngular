@@ -67,6 +67,13 @@
         "FOOTBALL": "Soccer",
         "BASKETBALL": "Basketball"
       }
+    },
+    "PROJECTS": {
+      "TITLE": "Projects",
+      "SUBTITLE": "Some of the projects I have developed during my studies",
+      "TOOLS": "Tools",
+      "SEE_MORE": "See more",
+      "SEE_LESS": "See less"
     }
   }
 }
