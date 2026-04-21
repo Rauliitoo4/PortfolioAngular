@@ -1,233 +1,235 @@
-.about-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 100px 40px 60px;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
-}
-
-.about-hero {
-  text-align: center;
-
-  h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--mat-sys-on-surface);
-    margin: 0 0 24px;
-  }
-}
-
-.about-description {
-  font-size: 18px;
-  line-height: 1.8;
-  color: var(--mat-sys-on-surface-variant);
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-.about-section {
-  h2 {
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--mat-sys-on-surface);
-    margin: 0 0 24px;
-    padding-bottom: 12px;
-    border-bottom: 2px solid var(--mat-sys-primary);
-  }
-}
-
-.education-card {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 24px;
-  background: var(--mat-sys-surface-variant);
-  border-radius: 16px;
-  border: 1px solid var(--mat-sys-outline-variant);
-}
-
-.education-icon {
-  font-size: 48px;
-  color: var(--mat-sys-primary);
-}
-
-.education-info {
-  h3 {
-    font-size: 20px;
-    font-weight: 600;
-    color: var(--mat-sys-on-surface);
-    margin: 0 0 4px;
+:host {
+  .about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 100px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
   }
 
-  p {
-    font-size: 16px;
-    color: var(--mat-sys-on-surface-variant);
-    margin: 0;
-  }
-}
+  .about-hero {
+    text-align: center;
 
-.education-period {
-  font-size: 14px !important;
-  color: var(--mat-sys-primary) !important;
-  margin-top: 4px !important;
-}
-
-.education-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.achievements-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.achievement-card {
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 24px;
-  background-color: var(--mat-sys-surface-variant);
-  border-radius: 16px;
-  border: 1 px solid var(--mat-sys-outline-variant);
-  position: relative;
-  overflow: hidden;
-
-  &.gold {
-    background: linear-gradient(135deg, #fff8e1, #fff3cd);
-    border: 2px solid #f9a825;
-
-    .achievement-icon {
-      color: #f9a825;
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--mat-sys-on-surface);
+      margin: 0 0 24px;
     }
+  }
 
+  .about-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--mat-sys-on-surface-variant);
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .about-section {
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--mat-sys-on-surface);
+      margin: 0 0 24px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--mat-sys-primary);
+    }
+  }
+
+  .education-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background: var(--mat-sys-surface-variant);
+    border-radius: 16px;
+    border: 1px solid var(--mat-sys-outline-variant);
+  }
+
+  .education-icon {
+    font-size: 48px;
+    color: var(--mat-sys-primary);
+  }
+
+  .education-info {
     h3 {
-      color: #e65100 ;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--mat-sys-on-surface);
+      margin: 0 0 4px;
     }
 
     p {
-      color: #5d4037 !important;
+      font-size: 16px;
+      color: var(--mat-sys-on-surface-variant);
+      margin: 0;
     }
   }
-}
 
-.achievement-icon {
-  font-size: 48px;
-  color: var(--mat-sys-primary);
-  flex-shrink: 0;
-}
-
-.achievement-info {
-  flex: 1;
-
-  h3 {
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0 0 4px;
+  .education-period {
+    font-size: 14px !important;
+    color: var(--mat-sys-primary) !important;
+    margin-top: 4px !important;
   }
 
-  p {
-    font-size: 15px;
-    color: var(--mat-sys-on-surface-variant);
-    margin: 0;
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
-}
 
-.champion-badge {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  background: linear-gradient(135deg, #f9a825, #ff6f00);
-  color: white;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 700;
-  box-shadow: 0 2px 8px rgba(249, 168, 37, 0.5);
-  flex-shrink: 0;
-
-  material-icons {
-    font-size: 16px;
+  .achievements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
   }
-}
 
-.languages-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
-}
+  .achievement-card {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    background-color: var(--mat-sys-surface-variant);
+    border-radius: 16px;
+    border: 1 px solid var(--mat-sys-outline-variant);
+    position: relative;
+    overflow: hidden;
 
-.language-card {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 16px 20px;
-  background: var(--mat-sys-surface-variant);
-  border-radius: 12px;
-  border: 1px solid var(--mat-sys-outline-variant);
-}
+    &.gold {
+      background: linear-gradient(135deg, #fff8e1, #fff3cd);
+      border: 2px solid #f9a825;
 
-.lang-flag {
-  width: 36px;
-  height: 26px;
-  border-radius: 4px;
-  object-fit: cover;
-}
+      .achievement-icon {
+        color: #f9a825;
+      }
 
-.language-info {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
+      h3 {
+        color: #e65100 ;
+      }
 
-.language-name {
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--mat-sys-on-surface);
-}
+      p {
+        color: #5d4037 !important;
+      }
+    }
+  }
 
-.language-level {
-  font-size: 13px;
-  color: var(--mat-sys-primary);
-}
-
-.hobbies-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.hobby-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
-  background: var(--mat-sys-surface-variant);
-  border: 1px solid var(--mat-sys-outline-variant);
-  border-radius: 999px;
-  font-size: 14px;
-  color: var(--mat-sys-primary);
-
-  .hobby-icon {
-    font-size: 18px;
+  .achievement-icon {
+    font-size: 48px;
     color: var(--mat-sys-primary);
-  }
-}
-
-@media (max-width: 768px) {
-  .about-container {
-    padding: 100px 24px 40px;
-    gap: 40px;
+    flex-shrink: 0;
   }
 
-  .about-hero h1 {
-    font-size: 32px;
+  .achievement-info {
+    flex: 1;
+
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin: 0 0 4px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--mat-sys-on-surface-variant);
+      margin: 0;
+    }
+  }
+
+  .champion-badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: linear-gradient(135deg, #f9a825, #ff6f00);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(249, 168, 37, 0.5);
+    flex-shrink: 0;
+
+    material-icons {
+      font-size: 16px;
+    }
   }
 
   .languages-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .language-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 20px;
+    background: var(--mat-sys-surface-variant);
+    border-radius: 12px;
+    border: 1px solid var(--mat-sys-outline-variant);
+  }
+
+  .lang-flag {
+    width: 36px;
+    height: 26px;
+    border-radius: 4px;
+    object-fit: cover;
+  }
+
+  .language-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .language-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--mat-sys-on-surface);
+  }
+
+  .language-level {
+    font-size: 13px;
+    color: var(--mat-sys-primary);
+  }
+
+  .hobbies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hobby-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: var(--mat-sys-surface-variant);
+    border: 1px solid var(--mat-sys-outline-variant);
+    border-radius: 999px;
+    font-size: 14px;
+    color: var(--mat-sys-primary);
+
+    .hobby-icon {
+      font-size: 18px;
+      color: var(--mat-sys-primary);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 100px 24px 40px;
+      gap: 40px;
+    }
+
+    .about-hero h1 {
+      font-size: 32px;
+    }
+
+    .languages-grid {
+      grid-template-columns: 1fr;
+    }
   }
 }

@@ -1,92 +1,94 @@
-.footer {
-  width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  padding: 24px 40px;
-  border-top: 1px solid var(--mat-sys-outline-variant);
-  background: var(--mat-sys-surface);
-  margin-top: auto;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.footer-left {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  color: var(--mat-sys-or-surface-variant);
-
-  .footer-name {
-    font-weight: 500;
-    color: var(--mat-sys-on-surface);
-  }
-
-  .footer-year {
-    font-size: 13px;
-    color: var(--mat-sys-on-surface-variant);
-  }
-}
-
-.footer-center {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 13px;
-  color: var(--mat-sys-on-surface-variant);
-
-  .heart {
-    font-size: 16px;
-    color: #e53935;
-  }
-
-  .angular-logo{
-    width: 18px;
-    height: 18px;
-  }
-}
-
-.footer-right {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.footer-link {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--mat-sys-on-surface-variant);
-  text-decoration: none;
-  transition: color 0.2s;
-
-  .material-icons {
-    font-size: 16px;
-  }
-
-  &:hover {
-    color: var(--mat-sys-primary);
-  }
-}
-
-@media (max-width: 768px) {
+:host{
   .footer {
-    padding: 16px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    padding: 24px 40px;
+    border-top: 1px solid var(--mat-sys-outline-variant);
+    background: var(--mat-sys-surface);
+    margin-top: auto;
   }
 
   .footer-content {
-    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: var(--mat-sys-or-surface-variant);
+
+    .footer-name {
+      font-weight: 500;
+      color: var(--mat-sys-on-surface);
+    }
+
+    .footer-year {
+      font-size: 13px;
+      color: var(--mat-sys-on-surface-variant);
+    }
+  }
+
+  .footer-center {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--mat-sys-on-surface-variant);
+
+    .heart {
+      font-size: 16px;
+      color: #e53935;
+    }
+
+    .angular-logo{
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .footer-link {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mat-sys-on-surface-variant);
+    text-decoration: none;
+    transition: color 0.2s;
+
+    .material-icons {
+      font-size: 16px;
+    }
+
+    &:hover {
+      color: var(--mat-sys-primary);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      padding: 16px 20px;
+    }
+
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 }

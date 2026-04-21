@@ -9,7 +9,7 @@
       @for (lang of languages; track lang.code) {
         <button mat-menu-item
           (click)="changeLanguage(lang.code)"
-          [class.active-lang]="lang.code === languageService.currentLanguage">
+          [class.active-lang]="lang.code === currentLanguageCode">
           <img [src]="lang.flag" class="flag"/>
           <span>{{ lang.label }}</span>
         </button>
@@ -36,7 +36,7 @@
   <div class="theme-section">
     <span class="material-icons theme-icon sun">wb_sunny</span>
     <mat-slide-toggle
-      [checked] = "themeService.isDarkMode()"
+      [checked] = "isDarkMode"
       (change) ="toggleTheme()"
       color="primary">
     </mat-slide-toggle>

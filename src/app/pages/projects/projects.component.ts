@@ -1,20 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { gsap } from 'gsap';
+import { timer } from 'rxjs';
 import { PortfolioService } from '../../services/portfolio.service';
 import { Project } from '../../models/project';
 import { TruncatePipe } from '../../pipes/truncate.pipe';
+
+const BANNER_COLORS = [
+  '#6750A4',
+  '#B5261E',
+  '#006874',
+  '#4A6741'
+];
 
 @Component({
   selector: 'app-projects',
   imports: [
     CommonModule,
-    TranslateModule,
+    TranslatePipe,
     MatCardModule,
     MatChipsModule,
     MatButtonModule,
@@ -26,26 +34,20 @@ import { TruncatePipe } from '../../pipes/truncate.pipe';
 })
 export class ProjectsComponent implements OnInit {
 
+  private readonly portfolioService = inject(PortfolioService);
+
   projects: Project[] = [];
   expandedId: number | null = null;
+  readonly bannerColors: string[] = BANNER_COLORS;
 
-  readonly bannerColors = [
-    '#6750A4',
-    '#B5261E',
-    '#006874',
-    '#4A6741'
-  ];
-
-  constructor(private portfolioService: PortfolioService) {}
-
-  ngOnInit() {
+  ngOnInit(): void {
       this.portfolioService.getProjects().subscribe(projects => {
         this.projects = projects;
-        setTimeout(() => this.animate(), 100);
+        timer(100).subscribe(() => this.animate());
       });
   }
 
-  animate(){
+  private animate(): void {
     gsap.from('.project-card', {
       opacity: 0,
       y: 50,
@@ -60,7 +62,7 @@ export class ProjectsComponent implements OnInit {
     return this.bannerColors[index % this.bannerColors.length];
   }
 
-  toggleExpand(id: number) {
+  toggleExpand(id: number): void {
     this.expandedId = this.expandedId === id ? null : id;
   }
 

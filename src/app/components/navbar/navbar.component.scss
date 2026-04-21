@@ -1,121 +1,140 @@
-.navbar-pill {
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 8px 16px;
-  background: var(--mat-sys-surface);
-  border: 1px solid var(--mat-sys-outline-variant);
-  border-radius: 999px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-}
-
-.divider {
-  width: 1px;
-  height: 20px;
-  background: var(--mat-sys-outline-variant);
-  margin: 0 6px;
-}
-
-.lang-trigger {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 6px 10px;
-  border: none;
-  background: transparent;
-  border-radius: 999px;
-  cursor: pointer;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--mat-sys-on-surface-variant);
-  transition: background 0.2s;
-
-  &:hover {
-    background: var(--mat-sys-surface-variant);
-  }
-
-  .chevron {
-    font-size: 16px;
-  }
-}
-
-.lang-label {
-  font-size: 12px;
-  font-weight: 500;
-}
-
-.nav-items {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--mat-sys-on-surface-variant);
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-
-  .nav-icon {
-    font-size: 16px;
-  }
-
-  &:hover {
-    background: var(--mat-sys-surface-variant);
-    color: var(--mat-sys-on-secondary-container);
-  }
-
-  &.active {
-    background: var(--mat-sys-secondary-container);
-    color: var(--mat-sys-on-secondary-container);
-  }
-}
-
-.theme-section {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-.theme-icon {
-  font-size: 18px;
-
-  &.sun { color: #EF9F27; }
-  &.moon { color: var(--mat-sys-on-surface-variant); }
-}
-
-.flag {
-    width: 20px;
-    height: 15px;
-    margin-right: 8px;
-    vertical-align: middle;
-}
-
-//RESPONSIVE
-
-@media (max-width: 768px) {
-  .nav-label,
-  .lang-label {
-    display: none;
-  }
-
+:host {
   .navbar-pill {
-    padding: 8px 12px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 8px 16px;
+    background: var(--mat-sys-surface);
+    border: 1px solid var(--mat-sys-outline-variant);
+    border-radius: 999px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .divider {
+    width: 1px;
+    height: 20px;
+    background: var(--mat-sys-outline-variant);
+    margin: 0 6px;
+  }
+
+  .lang-trigger {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 10px;
+    border: none;
+    background: transparent;
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mat-sys-on-surface-variant);
+    transition: background 0.2s;
+
+    &:hover {
+      background: var(--mat-sys-surface-variant);
+    }
+
+    .chevron {
+      font-size: 16px;
+    }
+  }
+
+  .lang-label {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .nav-items {
+    display: flex;
+    align-items: center;
     gap: 2px;
   }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--mat-sys-on-surface-variant);
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+
+    .nav-icon {
+      font-size: 16px;
+    }
+
+    &:hover {
+      background: var(--mat-sys-surface-variant);
+      color: var(--mat-sys-on-secondary-container);
+    }
+
+    &.active {
+      background: var(--mat-sys-secondary-container);
+      color: var(--mat-sys-on-secondary-container);
+    }
+  }
+
+  .theme-section {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .theme-icon {
+    font-size: 18px;
+
+    &.sun { color: #EF9F27; }
+    &.moon { color: var(--mat-sys-on-surface-variant); }
+  }
+
+  .flag {
+      width: 20px;
+      height: 15px;
+      margin-right: 8px;
+      vertical-align: middle;
+  }
+
+  //RESPONSIVE
+
+  @media (max-width: 768px) {
+    .nav-label,
+    .lang-label {
+      display: none;
+    }
+
+    .navbar-pill {
+      padding: 8px 12px;
+      gap: 2px;
+    }
+  }
+
+  .nav-label {
+    white-space: nowrap;
+  }
 }
 
-.nav-label {
-  white-space: nowrap;
-}
+::ng-deep .mat-mdc-menu-panel {
+    .flag {
+      width: 20px;
+      height: 15px;
+      border-radius: 2px;
+      object-fit: cover;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    .mat-mdc-menu-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }

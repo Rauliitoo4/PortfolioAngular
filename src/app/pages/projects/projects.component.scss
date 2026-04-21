@@ -1,123 +1,125 @@
-.projects-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 40px 60px;
-}
-
-.projects-hero {
-  text-align: center;
-  margin-bottom: 60px;
-
-  h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: var(--mat-sys-on-surface);
-    margin: 0 0 16px;
-  }
-
-  p {
-    font-size: 18px;
-    color: var(--mat-sys-on-surface-variant);
-    margin: 0;
-  }
-}
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
-}
-
-.project-card {
-  border-radius: 16px !important;
-  overflow: hidden;
-  border: 1px solid var(--mat-sys-outline-variant) !important;
-  background: var(--mat-sys-surface) !important;
-  transition: transform 0.2s, box-shadow 0.2s;
-
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
-  }
-}
-
-.project-banner {
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  min-height: 100px;
-}
-
-.project-title {
-  font-size: 20px;
-  font-weight: 600;
-  color: white;
-  margin: 0;
-}
-
-.project-period {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.8);
-}
-
-.project-content {
-  padding: 20px !important;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.project-center {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 14px;
-  color: var(--mat-sys-on-surface-variant);
-  margin: 0;
-
-  .material-icons {
-    font-size: 16px;
-    color: var(--mat-sys-primary);
-  }
-}
-
-.project-description {
-  font-size: 14px;
-  line-height: 1.6;
-  color: var(--mat-sys-on-surface-variant);
-  margin: 0;
-}
-
-.project-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.project-tools {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  font-size: 13px;
-}
-
-.tools-label {
-  color: var(--mat-sys-on-surface-variant);
-  font-weight: 500;
-}
-
-@media (max-width: 768px) {
+:host {  
   .projects-container {
-    padding: 100px 24px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 40px 60px;
+  }
+
+  .projects-hero {
+    text-align: center;
+    margin-bottom: 60px;
+
+    h1 {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--mat-sys-on-surface);
+      margin: 0 0 16px;
+    }
+
+    p {
+      font-size: 18px;
+      color: var(--mat-sys-on-surface-variant);
+      margin: 0;
+    }
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 
-  .projects-hero h1 {
-    font-size: 32px;
+  .project-card {
+    border-radius: 16px !important;
+    overflow: hidden;
+    border: 1px solid var(--mat-sys-outline-variant) !important;
+    background: var(--mat-sys-surface) !important;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+    }
+  }
+
+  .project-banner {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-height: 100px;
+  }
+
+  .project-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+  }
+
+  .project-period {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .project-content {
+    padding: 20px !important;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .project-center {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: var(--mat-sys-on-surface-variant);
+    margin: 0;
+
+    .material-icons {
+      font-size: 16px;
+      color: var(--mat-sys-primary);
+    }
+  }
+
+  .project-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--mat-sys-on-surface-variant);
+    margin: 0;
+  }
+
+  .project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .project-tools {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .tools-label {
+    color: var(--mat-sys-on-surface-variant);
+    font-weight: 500;
+  }
+
+  @media (max-width: 768px) {
+    .projects-container {
+      padding: 100px 24px 40px;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .projects-hero h1 {
+      font-size: 32px;
+    }
   }
 }

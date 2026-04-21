@@ -166,6 +166,13 @@
       "message": "Este mensaje es solo de prueba",
       "date": "2026-04-20T10:21:20.008Z",
       "id": "8vJFhNYhcqI"
+    },
+    {
+      "name": "Raul",
+      "email": "redondo@gmail.com",
+      "message": "Hola me llamo Raúl",
+      "date": "2026-04-21T08:15:16.394Z",
+      "id": "xDZ6ctA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

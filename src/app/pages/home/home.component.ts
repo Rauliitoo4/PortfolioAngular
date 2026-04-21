@@ -1,14 +1,15 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { MatButtonModule } from '@angular/material/button';
 import { gsap } from 'gsap';
+import { StatItem } from '../../models/interfaces/home/stat-item';
 
 @Component({
   selector: 'app-home',
   imports: [
     RouterModule,
-    TranslateModule,
+    TranslatePipe,
     MatButtonModule
   ],
   templateUrl: './home.component.html',
@@ -16,20 +17,18 @@ import { gsap } from 'gsap';
 })
 export class HomeComponent implements OnInit {
 
-  @ViewChild('hero', { static: true}) hero!: ElementRef;
-
-  stats = [
+  readonly stats: StatItem[] = [
     { value: 4, label: 'PAGES.HOME.STATS.PROJECTS'  },
     { value: 5, label: 'PAGES.HOME.STATS.YEARS'     },
     { value: 11, label: 'PAGES.HOME.STATS.SKILLS'    },
     { value: 3, label: 'PAGES.HOME.STATS.LANGUAGES' }
   ];
 
-  ngOnInit() {
+  ngOnInit(): void {
       this.animateHero();
   }
 
-  animateHero() {
+  animateHero(): void {
     const tl = gsap.timeline();
 
     tl.from('.hero-greeting', {opacity: 0, y:30, duration: 0.6, ease: 'power2.out'})
